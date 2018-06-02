@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
 <head>
-<title>ㅅㄱㅌ profile</title>
+<title>About</title>
 <meta charset="utf-8">
   <style>
   body{
@@ -26,6 +26,7 @@
     display: inline-block;
     margin: 0px;
     padding-top: 30px;
+    font-size: 120%;
    }
   li{
     padding: 5px;
@@ -34,6 +35,17 @@
   #grid{
     display: grid;
     grid-template-columns: 150px 1fr;
+  }
+  #photo{
+    display: grid;
+    grid-template-columns: 260px 1fr;
+  }
+  #photo img{
+    margin-top: 10px;
+  }
+  #photo p{
+  margin-top: auto;
+  margin-bottom: 0px;
   }
   #menu{
     display: inline-block;
@@ -48,66 +60,73 @@
     text-align: left;
     font-family: sans-serif;
     font-weight: lighter;
-    font-size: 15px;
   }
   h2{
     margin-top: 50px;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
     text-align: left;
     font-family: sans-serif;
     font-weight: lighter;
+    font-size: 120%;
   }
   p img{
     width: 60%;
   }
-
-  @media(max-width:768px){
+  @media(max-width:1024px){
     body{
       margin-left: 10%;
       margin-right: 10%;
     }
-  #grid{
+    #grid{
       display: block;
+      text-align: center;
     }
     #menu{
-      display: block;
-      text-align: left;
-      padding-top: 5px;
+        display: block;
+        text-align: center;
+    }
+    #content{
+        margin: auto;
+        width: 250px;
+        text-align: center;
     }
     h1{
       display: inline-block;
-      height: 40px;
+      height: 120px;
       margin: 0px;
       padding-top: 10px;
     }
     h1 img{
       display: block;
-      height: 40px;
+      height: 120px;
     }
+      #photo{
+          display: block;
+        }
+
     p img{
       width: 100%
     }
     li{
-      padding: 5px;
+      padding: 0px;
+      padding-right: 10px;
+      padding-left: 0px;
       display: inline-block;
     }
     ul{
       text-align:center;
       display: inline-block;
       margin: 0px;
-      padding-top: 0px;
+      padding-top: 10px;
       padding-left: 0px;
-     }
-     a{
-       font-size: small;
+      font-size: 120%;
      }
      p{
        margin-top: 20px;
-       font-size: small;
+       width: 400px;
      }
      h2{
-       font-size: 20px;
-       margin-top: 20px;
+       font-size: 120%;
      }
   }
   </style>
@@ -120,12 +139,13 @@
   </h1>
   <div id="menu">
     <ul type="none">
-      <li><a href="1.html">profile</a></li>
-      <li><a href="2.html">project</a></li>
-      <li><a href="3.html">contact</a></li>
+      <li><a href="1.html">About</a></li>
+      <li><a href="2.html">Project</a></li>
+      <li><a href="3.html">Contact</a></li>
     </ul>
   </div>
 </div>
+<div id="content">
   <h2>Seo Kyeongtaek</h2>
   <p>
   1989<br>
@@ -134,12 +154,14 @@
   <p>
   2008-2017<br>
   Korea National University of Arts<br>
-  Department of architecture, B.Arch, RIBA2<br>
+  Department of architecture<br>
+  B.Arch, RIBA2<br>
   </p>
   <p>
   2017- <br>
   around architects<br>
   staff<br>
   </p>
+  <div>
 </body>
 </html>

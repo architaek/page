@@ -7,7 +7,7 @@
   body{
     margin-left: 20%;
     margin-right: 20%;
-    overflow:scroll; 
+    overflow:scroll;
   }
   h1{
     display: inline-block;
@@ -20,13 +20,13 @@
     text-decoration:none;
     font-family: sans-serif;
     font-weight: lighter;
-    font-size: 20px;
   }
   ul{
     text-align:right;
     display: inline-block;
     margin: 0px;
     padding-top: 30px;
+    font-size: 120%;
    }
   li{
     padding: 5px;
@@ -36,63 +36,87 @@
     display: grid;
     grid-template-columns: 150px 1fr;
   }
+  #photo{
+    display: grid;
+    grid-template-columns: 260px 1fr;
+  }
+  #photo img{
+    margin-top: 10px;
+  }
+  #photo p{
+  margin-top: auto;
+  margin-bottom: 0px;
+  }
   #menu{
     display: inline-block;
     text-align: right;
     padding-top: 15px;
   }
-  p{
-    text-align:center;
-    margin-top: 20px;
-    font-family: sans-serif;
-    font-weight: lighter;
-    font-size: small;
-  }
   h1 img{
     height: 100px;
+  }
+  p{
+    margin-top: 20px;
+    text-align: left;
+    font-family: sans-serif;
+    font-weight: lighter;
+  }
+  h2{
+    margin-top: 50px;
+    margin-bottom: 5px;
+    text-align: left;
+    font-family: sans-serif;
+    font-weight: lighter;
+    font-size: 120%;
   }
   p img{
     width: 60%;
   }
-  @media(max-width:768px){
-  body{
+  @media(max-width:1024px){
+    body{
       margin-left: 10%;
       margin-right: 10%;
     }
-  #grid{
+    #grid{
       display: block;
+      text-align: center;
     }
     #menu{
-      display: block;
-      text-align: left;
-      padding-top: 5px;
+        display: block;
+        text-align: center;
     }
     h1{
       display: inline-block;
-      height: 40px;
+      height: 120px;
       margin: 0px;
       padding-top: 10px;
     }
     h1 img{
       display: block;
-      height: 40px;
+      height: 120px;
     }
     p img{
       width: 100%
     }
     li{
-      padding: 5px;
+      padding: 0px;
+      padding-right: 10px;
+      padding-left: 0px;
       display: inline-block;
     }
     ul{
       text-align:center;
       display: inline-block;
       margin: 0px;
-      padding-top: 0px;
+      padding-top: 10px;
       padding-left: 0px;
+      font-size: 120%;
      }
-     a{
-       font-size: small;
+     p{
+       margin-top: 20px;
+     }
+     h2{
+       font-size: 120%;
      }
   }
   </style>
@@ -105,14 +129,11 @@
   </h1>
   <div id="menu">
     <ul type="none">
-      <li><a href="1.html">profile</a></li>
-      <li><a href="2.html">project</a></li>
-      <li><a href="3.html">contact</a></li>
+      <li><a href="1.html">About</a></li>
+      <li><a href="2.html">Project</a></li>
+      <li><a href="3.html">Contact</a></li>
     </ul>
   </div>
 </div>
-  <p>
-  <img src="main.gif" align="center">
-  </p>
 </body>
 </html>

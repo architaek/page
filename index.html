@@ -145,5 +145,24 @@
     </ul>
   </div>
 </div>
+  <div id="content">
+    <script language = "javascript">
+	var imgArray = new Array();
+	imgArray[0] = "http://www.archi-taek-ture.com/2-8.jpg";
+	imgArray[1] = "http://www.archi-taek-ture.com/2-7.jpg";
+	imgArray[2] = "http://www.archi-taek-ture.com/2-6.jpg";
+	imgArray[3] = "http://www.archi-taek-ture.com/2-5.jpg";
+  imgArray[4] = "http://www.archi-taek-ture.com/2-4.jpg";
+  imgArray[5] = "http://www.archi-taek-ture.com/2-3.jpg";
+  imgArray[6] = "http://www.archi-taek-ture.com/2-2.jpg";
+  imgArray[7] = "http://www.archi-taek-ture.com/2-1.jpg";
+	
+	function showImage(){
+		var imgNum = Math.round(Math.random()*3);
+		var objImg = document.getElementById("introImg");
+		objImg.src = imgArray[imgNum];
+	}
+</script>
+    </div>
 </body>
 </html>

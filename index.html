@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
 <head>
-<title>archi-taek-ture</title>
+<title>Project</title>
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-116751046-1"></script>
 <script>
@@ -46,11 +46,6 @@
     display: grid;
     grid-template-columns: 150px 1fr;
   }
-  #content{
-     margin: auto;
-     width: 500px;
-     text-align: center;
-    }
   #photo{
     display: grid;
     grid-template-columns: 260px 1fr;
@@ -89,8 +84,8 @@
   }
   @media(max-width:1024px){
     body{
-      margin-left: 10%;
-      margin-right: 10%;
+      margin-left: 0px;
+      margin-right: 0px;
     }
     #grid{
       display: block;
@@ -98,6 +93,11 @@
     }
     #menu{
         display: block;
+        text-align: center;
+    }
+    #content{
+        margin: auto;
+        width: 250px;
         text-align: center;
     }
     h1{
@@ -110,6 +110,13 @@
       display: block;
       height: 120px;
     }
+      #photo{
+          display: block;
+          text-align: left;
+        }
+        #photo img{
+              width: 250px;
+            }
     p img{
       width: 100%
     }
@@ -150,8 +157,9 @@
     </ul>
   </div>
 </div>
-  <div id="content">
+<div id="content">
 <img scr="2-1.jpg">
     </div>
+  
 </body>
 </html>

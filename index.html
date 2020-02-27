@@ -130,23 +130,7 @@
      }
   }
   </style>
-</head>
-
-<body>
-  <div id="grid">
-  <h1>
-    <a href="index.html"><img src="title.gif"></a>
-  </h1>
-  <div id="menu">
-    <ul type="none">
-      <li><a href="1.html">About</a></li>
-      <li><a href="2.html">Project</a></li>
-      <li><a href="3.html">&</a></li>
-    </ul>
-  </div>
-</div>
-  <div id="content">
-    <script language = "javascript">
+	    <script language = "javascript">
 	var imgArray = new Array();
 	imgArray[0] = "http://www.archi-taek-ture.com/2-8.jpg";
 	imgArray[1] = "http://www.archi-taek-ture.com/2-7.jpg";
@@ -163,6 +147,26 @@
 		objImg.src = imgArray[imgNum];
 	}
 </script>
+</head>
+
+<body>
+  <div id="grid">
+  <h1>
+    <a href="index.html"><img src="title.gif"></a>
+  </h1>
+  <div id="menu">
+    <ul type="none">
+      <li><a href="1.html">About</a></li>
+      <li><a href="2.html">Project</a></li>
+      <li><a href="3.html">&</a></li>
+    </ul>
+  </div>
+</div>
+  <div id="content">
+
+	  <onload = "showImage()">
+	<img id = "introImg" border="0">
+</body>
     </div>
 </body>
 </html>

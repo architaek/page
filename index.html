@@ -43,55 +43,69 @@
     display: inline-block;
   }
   #grid{
-    display: grid;
-    grid-template-columns: 150px 1fr;
-  }
-  #photo{
-    display: grid;
-    grid-template-columns: 260px 1fr;
-  }
-  #photo img{
-    margin-top: 10px;
-  }
-  #photo p{
-  margin-top: auto;
-  margin-bottom: 0px;
+    margin-top: 100px;
+    display: block;
+    text-align: center;
   }
   #menu{
+      margin-top: 50px;
+      margin-bottom: 100px;
+      display: block;
+      text-align: center;
+  }
+  #content{
+      margin: auto;
+      width: 250px;
+      text-align: center;
+  }
+
+  h1{
     display: inline-block;
-    text-align: right;
-    padding-top: 15px;
+    height: 250px;
+    margin: 0px;
+    padding-top: 10px;
   }
   h1 img{
-    height: 100px;
+    display: block;
+    height: 250px;
   }
-  p{
-    margin-top: 20px;
-    text-align: left;
-    font-family: sans-serif;
-    font-weight: lighter;
-  }
-  h2{
-    margin-top: 50px;
-    margin-bottom: 5px;
-    text-align: left;
-    font-family: sans-serif;
-    font-weight: lighter;
-    font-size: 120%;
-  }
+
   p img{
-    width: 60%;
+    width: 100%
   }
+  li{
+    padding: 0px;
+    padding-right: 10px;
+    padding-left: 0px;
+    display: inline-block;
+  }
+  ul{
+    text-align:center;
+    display: inline-block;
+    margin: 0px;
+    padding-top: 10px;
+    padding-left: 0px;
+    font-size: 120%;
+   }
+   p{
+     margin-top: 20px;
+   }
+   h2{
+     font-size: 120%;
+   }
   @media(max-width:1024px){
     body{
       margin-left: 0px;
       margin-right: 0px;
     }
     #grid{
+      margin-top: 100px;
       display: block;
       text-align: center;
     }
     #menu{
+        margin-top: 50px;
+        margin-bottom: 100px;
         display: block;
         text-align: center;
     }
@@ -102,29 +116,22 @@
     }
     h1{
       display: inline-block;
-      height: 120px;
+      height: 200px;
       margin: 0px;
       padding-top: 10px;
     }
     h1 img{
       display: block;
-      height: 120px;
+      height: 200px;
     }
-      #photo{
-          display: block;
-          text-align: left;
-        }
-        #photo img{
-              width: 250px;
-            }
     p img{
       width: 100%
     }
     li{
-      padding: 0px;
+      padding: 5px;
       padding-right: 10px;
       padding-left: 0px;
-      display: inline-block;
+      display: block;
     }
     ul{
       text-align:center;
@@ -147,7 +154,7 @@
 <body>
   <div id="grid">
   <h1>
-    <a href="index.html"><img src="title.gif"></a>
+    <a href="index.html"><img src="title2.png"></a>
   </h1>
   <div id="menu">
     <ul type="none">
@@ -157,9 +164,9 @@
     </ul>
   </div>
 </div>
-<div id="photo">
-<img scr="2-1.jpg">
-    </div>
-  
+
+</div>
+
+
 </body>
 </html>
